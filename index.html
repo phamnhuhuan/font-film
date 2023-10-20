@@ -6,7 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
    <link rel="stylesheet" href="./css/form.css">
    <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,22 +16,27 @@
       width: 100%;
       height: auto;
    }
-   .logo-img{
-      max-width: 123px;
-}
-.search-input{
-   padding: .8rem 1.8rem;
-}
+
+   .logo-img {
+      max-width: 120px;
+   }
+
+   .search-input {
+      padding: .8rem 1.8rem;
+   }
+
    @media (max-width: 768px) {
-      .logo-img{
-         max-width: 70px;
+      .logo-img {
+         max-width: 80px;
       }
-      .vnpay{
+
+      .vnpay {
          padding-left: 1rem;
       }
-      .search-input{
-   padding: .5rem 1rem;
-}
+
+      .search-input {
+         padding: .5rem 1rem;
+      }
    }
 </style>
 
@@ -41,10 +47,26 @@
          <div class="container">
             <div class="container" style="display: flex;justify-content: space-between; align-items: center;">
                <div class="logo-img"><a href=""><img src="./img/logo.jpg" alt=""></a></div>
-               <div style="width: 580px;border: 1.4px solid rgba(255,255,255,.2);display: flex;border-radius: 100px;">
-                  <input class="search-input" type="text" placeholder="Tìm kiếm phim hay" style="border: none;outline: none;background-color: transparent;flex: 1;">
+               <div
+                  style="width: 580px;border: 1.4px solid rgba(255,255,255,.2);display: flex;border-radius: 100px;position: relative;">
+                  <input class="search-input" type="text" placeholder="Tìm kiếm phim hay"
+                     style="border: none;outline: none;background-color: transparent;flex: 1;">
+                  <div class="" id="resuft_search"
+                     style="position: absolute;z-index: 100;width: 100%;background-color: #1b1515;top: 100%;padding: 0 1rem; margin-top: .5rem;border-radius: 5px;">
+                     
+                    <a href="">
+                     <div style="margin: 2rem 0;">
+                        <div style="display: flex;align-items: center;">
+                           <div style="width: 25px;height: 25px;"><img style="border-radius: 50%;"
+                                 src="./img/movie.jpeg" alt=""></div>
+                           <div style="margin-left: 1rem;"><span>Phim chieu tap</span></div>
+                        </div>
+                     </div>
+                    </a>
+                     
+                  </div>
                </div>
-               <div  class="logo-img vnpay"><a href=""><img src="./img/vnpay.png" alt=""></a></div>
+               <div class="logo-img vnpay"><a href=""><img src="./img/vnpay.png" alt=""></a></div>
             </div>
          </div>
       </header>
@@ -52,7 +74,7 @@
          <div class="container">
             <nav class="navbar halim-navbar main-navigation" role="navigation" data-dropdown-hover="1">
                <div class="navbar-header">
-                  
+
                   <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse"
                      data-target="#halim" aria-expanded="false">
                      <span class="sr-only">Menu</span>
@@ -71,10 +93,10 @@
                               aria-haspopup="true">Thể loại phim<span class="caret"></span></a>
                            <ul role="menu" class=" dropdown-menu">
                               <li><a title="Việt nam" href="danhmuc.php">Việt nam</a></li>
-                     
+
                            </ul>
                         </li>
-                        
+
                         <li><a title="Phim Chiếu Rạp" href="danhmuc.php">Phim Chiếu Rạp</a></li>
                         <li><a title="Đăng nhập" href="danhmuc.php">Đăng nhập</a></li>
                         <li><a title="Đăng kí" href="danhmuc.php">Đăng kí</a></li>
@@ -94,7 +116,7 @@
       </div>
 
 
-       <!-- <div class="container">
+      <!-- <div class="container">
            <div class="row container" id="wrapper">
               <div class="halim-panel-filter">
                  <div id="ajax-filter" class="panel-collapse collapse" aria-expanded="true" role="menu">
@@ -509,31 +531,31 @@
             </div>
          </section>
       </div> -->
-      
+
       <div class="animated-form">
          <form action="" method="post" class="form" autocomplete="off">
             <div class="title">Laravel</div>
             <div class="subtitle">Tạo tài khoản xem phim</div>
             <div class="input-container ic1">
-              <input id="firstname" class="input" type="text" placeholder=" " />
-              
-              <div class="cut"></div>
-              <label for="firstname" class="placeholder">Tên đăng nhập</label>
+               <input id="firstname" class="input" type="text" placeholder=" " />
+
+               <div class="cut"></div>
+               <label for="firstname" class="placeholder">Tên đăng nhập</label>
             </div>
             <div class="error_input">loi vai ca lon luon ne</div>
             <div class="input-container ic2">
-              <input id="lastname" class="input" type="text" placeholder="">
-              <div class="cut"></div>
-              <label for="lastname" class="placeholder">Email</label>
-            </div>
-             <div class="error_input">loi vai ca lon luon ne</div>
-            <div class="input-container ic2">
-              <input id="lastname" class="input" type="password" placeholder="">
-              <div class="cut"></div>
-              <label for="lastname" class="placeholder">Mật khẩu</label>
+               <input id="lastname" class="input" type="text" placeholder="">
+               <div class="cut"></div>
+               <label for="lastname" class="placeholder">Email</label>
             </div>
             <div class="error_input">loi vai ca lon luon ne</div>
-            
+            <div class="input-container ic2">
+               <input id="lastname" class="input" type="password" placeholder="">
+               <div class="cut"></div>
+               <label for="lastname" class="placeholder">Mật khẩu</label>
+            </div>
+            <div class="error_input">loi vai ca lon luon ne</div>
+
             <button type="text" class="submit">Đăng kí</button>
          </form>
       </div>
@@ -542,46 +564,56 @@
 
       <footer>
          <div style="margin-bottom: 1.2rem;">
-             <div class="container py-5">
-                 <div class="row g-5">
-                     <div class="col-lg-4 col-md-6">
-                         <h3 class="text-white mb-4">Liên lạc</h3>
-                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="margin-right: 1rem;"></i>Nam Từ Liêm - Hà Nội</p>
-                         <p class="mb-2"><i class="fa fa-phone-alt me-3" style="margin-right: 1rem;"></i>0382 679 151</p>
-                         <p class="mb-2"><i class="fa fa-envelope me-3" style="margin-right: 1rem;"></i>phuan3366@gmail.com</p>
-                         <div class="d-flex pt-2">
-                             <a class="btn btn-outline-white btn-social" href=""><i class="fab fa-twitter"></i></a>
-                             <a class="btn btn-outline-white btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                             <a class="btn btn-outline-white btn-social" href=""><i class="fab fa-youtube"></i></a>
-                             <a class="btn btn-outline-white btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                         </div>
+            <div class="container py-5">
+               <div class="row g-5">
+                  <div class="col-lg-4 col-md-6">
+                     <h3 class="text-white mb-4">Liên lạc</h3>
+                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="margin-right: 1rem;"></i>Nam Từ Liêm -
+                        Hà Nội</p>
+                     <p class="mb-2"><i class="fa fa-phone-alt me-3" style="margin-right: 1rem;"></i>0382 679 151</p>
+                     <p class="mb-2"><i class="fa fa-envelope me-3" style="margin-right: 1rem;"></i>phuan3366@gmail.com
+                     </p>
+                     <div class="d-flex pt-2">
+                        <a class="btn btn-outline-white btn-social" href=""><i style="color: #a5a5a5;"
+                              class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-white btn-social" href=""><i style="color: #a5a5a5;"
+                              class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-white btn-social" href=""><i style="color: #a5a5a5;"
+                              class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-white btn-social" href=""><i style="color: #a5a5a5;"
+                              class="fab fa-linkedin-in"></i></a>
                      </div>
-                     <div class="col-lg-4 col-md-6">
-                         <h3 class="text-white mb-4">Đường link</h3>
-                         <a class="btn btn-link text-white-50 text-decoration-none">Trang chủ</a> <br>
-                         <a class="btn btn-link text-white-50 text-decoration-none" >Giới thiệu</a> <br>
-                         <a class="btn btn-link text-white-50 text-decoration-none">Tin tức</a> <br>
-                         <a class="btn btn-link text-white-50 text-decoration-none">Larvel</a> <br>
-                      
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <h3 class="text-white mb-4">Đường link</h3>
+                     <a style="color: #a5a5a5;" class="btn btn-link text-white text-decoration-none">Trang chủ</a> <br>
+                     <a style="color: #a5a5a5;" class="btn btn-link text-white-50 text-decoration-none">Giới thiệu</a>
+                     <br>
+                     <a style="color: #a5a5a5;" class="btn btn-link text-white-50 text-decoration-none">Tin tức</a> <br>
+                     <a style="color: #a5a5a5;" class="btn btn-link text-white-50 text-decoration-none">Larvel</a> <br>
+
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                     <h3 class="text-white mb-4">Thông tin</h3>
+                     <p>Website demo Laravel coder by Phạm Như Huấn</p>
+                     <div class="position-relative mx-auto" style="max-width: 400px;display: flex;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5 text-white" type="text">
+                        <button style="margin-left: .4rem;" type="button"
+                           class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Gửi</button>
                      </div>
-                     
-                     <div class="col-lg-4 col-md-6">
-                         <h3 class="text-white mb-4">Thông tin</h3>
-                         <p>Website demo Laravel coder by Phạm Như Huấn</p>
-                         <div class="position-relative mx-auto" style="max-width: 400px;display: flex;">
-                           <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5 text-white" type="text">
-                           <button style="margin-left: .4rem;" type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Gửi</button>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             
+                  </div>
+               </div>
+            </div>
+
          </div>
-     </footer>
-      
+      </footer>
+
       <script src="https://code.jquery.com/jquery-3.7.1.js"
          integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+         crossorigin="anonymous"></script>
       <script src="./js/owl.carousel.min.js"></script>
       <script>
          jQuery(document).ready(function ($) {
