@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/form.css">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+   img {
+      width: 100%;
+      height: auto;
+   }
+   .logo-img{
+      max-width: 123px;
+}
+.search-input{
+   padding: .8rem 1.8rem;
+}
+   @media (max-width: 768px) {
+      .logo-img{
+         max-width: 70px;
+      }
+      .vnpay{
+         padding-left: 1rem;
+      }
+      .search-input{
+   padding: .5rem 1rem;
+}
+   }
+</style>
+
+<body>
+
+   <body class="home blog halimthemes halimmovies" data-masonry="">
+      <header id="header">
+         <div class="container">
+            <div class="container" style="display: flex;justify-content: space-between; align-items: center;">
+               <div class="logo-img"><a href=""><img src="./img/logo.jpg" alt=""></a></div>
+               <div style="width: 580px;border: 1.4px solid rgba(255,255,255,.2);display: flex;border-radius: 100px;">
+                  <input class="search-input" type="text" placeholder="Tìm kiếm phim hay" style="border: none;outline: none;background-color: transparent;flex: 1;">
+               </div>
+               <div  class="logo-img vnpay"><a href=""><img src="./img/vnpay.png" alt=""></a></div>
+            </div>
+         </div>
+      </header>
+      <div class="navbar-container">
+         <div class="container">
+            <nav class="navbar halim-navbar main-navigation" role="navigation" data-dropdown-hover="1">
+               <div class="navbar-header">
+                  
+                  <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse"
+                     data-target="#halim" aria-expanded="false">
+                     <span class="sr-only">Menu</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                  </button>
+
+               </div>
+               <div class="collapse navbar-collapse" id="halim">
+                  <div class="menu-menu_1-container">
+                     <ul id="menu-menu_1" class="nav navbar-nav navbar-left">
+                        <li class="current-menu-item active"><a title="Trang Chủ" href="index.php">Trang Chủ</a></li>
+                        <li class="mega dropdown">
+                           <a title="Quốc Gia" href="#" data-toggle="dropdown" class="dropdown-toggle"
+                              aria-haspopup="true">Thể loại phim<span class="caret"></span></a>
+                           <ul role="menu" class=" dropdown-menu">
+                              <li><a title="Việt nam" href="danhmuc.php">Việt nam</a></li>
+                     
+                           </ul>
+                        </li>
+                        
+                        <li><a title="Phim Chiếu Rạp" href="danhmuc.php">Phim Chiếu Rạp</a></li>
+                        <li><a title="Đăng nhập" href="danhmuc.php">Đăng nhập</a></li>
+                        <li><a title="Đăng kí" href="danhmuc.php">Đăng kí</a></li>
+                     </ul>
+                  </div>
+
+               </div>
+            </nav>
+            <div class="collapse navbar-collapse" id="search-form">
+               <div id="mobile-search-form" class="halim-search-form"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="user-info">
+               <div id="mobile-user-login"></div>
+            </div>
+         </div>
+      </div>
+      </div>
+
+
+       <!-- <div class="container">
+           <div class="row container" id="wrapper">
+              <div class="halim-panel-filter">
+                 <div id="ajax-filter" class="panel-collapse collapse" aria-expanded="true" role="menu">
+                    <div class="ajax"></div>
+                 </div>
+              </div>
+              <div class="col-xs-12 carausel-sliderWidget">
+                 <section id="halim-advanced-widget-4">
+                    <div class="section-heading">
+                       <a href="danhmuc.php" title="Phim Chiếu Rạp">
+                          <span class="h-text">Phim mới nhất</span>
+                       </a>
+                       <ul class="heading-nav pull-right hidden-xs">
+                          <li class="section-btn halim_ajax_get_post" data-catid="4" data-showpost="12"
+                             data-widgetid="halim-advanced-widget-4" data-layout="6col"><span data-text="Laravel"></span>
+                          </li>
+                       </ul>
+                    </div>
+                    <div id="halim-advanced-widget-4-ajax-box" class="halim_box">
+                       <article class="col-md-3 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                          <div class="halim-item">
+                             <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <figure><img class="lazy img-responsive"
+                                      src="./img/movie.jpeg"
+                                      alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                      aria-hidden="true"></i>Vietsub</span>
+                                <div class="icon_overlay"></div>
+                                <div class="halim-post-title-box">
+                                   <div class="halim-post-title ">
+                                      <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                      <p class="original_title">Black Widow</p>
+                                   </div>
+                                </div>
+                             </a>
+                          </div>
+                       </article>
+                    </div>
+                 </section>
+                 <div class="clearfix"></div>
+              </div>
+           </div>
+        </div>
+       <div class="container">
+           <div class="row container" id="wrapper">
+              <div class="halim-panel-filter">
+                 <div id="ajax-filter" class="panel-collapse collapse" aria-expanded="true" role="menu">
+                    <div class="ajax"></div>
+                 </div>
+              </div>
+              <div class="col-xs-12 carausel-sliderWidget">
+                 <section id="halim-advanced-widget-4">
+                    <div class="section-heading">
+                       <a href="danhmuc.php" title="Phim Chiếu Rạp">
+                          <span class="h-text">Phim Chiếu Rạp</span>
+                       </a>
+                       <ul class="heading-nav pull-right hidden-xs">
+                          <li class="section-btn halim_ajax_get_post" data-catid="4" data-showpost="12"
+                             data-widgetid="halim-advanced-widget-4" data-layout="6col"><span data-text="Laravel"></span>
+                          </li>
+                       </ul>
+                    </div>
+                    <div id="halim-advanced-widget-4-ajax-box" class="halim_box">
+                       <article class="col-md-3 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                          <div class="halim-item">
+                             <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <figure><img class="lazy img-responsive"
+                                      src="./img/movie.jpeg"
+                                      alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                      aria-hidden="true"></i>Vietsub</span>
+                                <div class="icon_overlay"></div>
+                                <div class="halim-post-title-box">
+                                   <div class="halim-post-title ">
+                                      <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                      <p class="original_title">Black Widow</p>
+                                   </div>
+                                </div>
+                             </a>
+                          </div>
+                       </article>
+                    </div>
+                 </section>
+                 <div class="clearfix"></div>
+              </div>
+           </div>
+        </div> -->
+
+      <!-- chi tiet phim -->
+
+      <!-- <div class="detail-movie-note">
+           <div class="container">
+            <div class="row container" id="wrapper">
+               <div class="halim-panel-filter">
+                  <div class="panel-heading">
+                     <div class="row">
+                        <div class="col-xs-6">
+                           <div class="yoast_breadcrumb hidden-xs"><span><span><a href="danhmuc.php">Phim hay</a> » <span><a href="danhmuc.php">Mỹ</a> » <span class="breadcrumb_last" aria-current="page">GÓA PHỤ ĐEN</span></span></span></span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="ajax-filter" class="panel-collapse collapse" aria-expanded="true" role="menu">
+                     <div class="ajax"></div>
+                  </div>
+               </div>
+               <main id="main-contents" class="col-xs-12 col-sm-12 col-md-8">
+                  <section id="content" class="test">
+                     <div class="clearfix wrap-content">
+                       
+                        <div class="halim-movie-wrapper container">
+                           
+                           <div class="movie_info col-xs-12">
+                              <div class="movie-poster col-md-3">
+                                 <img class="movie-thumb" src="./img/movie.jpeg" alt="GÓA PHỤ ĐEN">
+                                 <div class="bwa-content" style="display: flex;">
+                                    <div class="loader"></div>
+                                    <div>
+                                       <a href="xemphim.php" class="bwac-btn">
+                                          <div style="transform: translateX(-7px);"><i class="fa-regular fa-circle-play"></i></div>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="film-poster col-md-9">
+                                 <h1 class="movie-title title-1" style="display:block;line-height:35px;margin-bottom: -14px;color: #ffed4d;text-transform: uppercase;font-size: 18px;">GÓA PHỤ ĐEN</h1>
+                                 <h2 class="movie-title title-2" style="font-size: 11px;">Black Widow (2021)</h2>
+                                 <ul class="list-info-group">
+                                    <li class="list-info-group-item"><span>Trạng Thái</span> : <span class="quality">HD</span><span class="episode">Vietsub</span></li>
+                                    <li class="list-info-group-item"><span>Điểm IMDb</span> : <span class="imdb">7.2</span></li>
+                                    <li class="list-info-group-item"><span>Thời lượng</span> : 133 Phút</li>
+                                    <li class="list-info-group-item"><span>Thể loại</span> : <a href="" rel="category tag">Chiếu Rạp</a></li>
+                                    <li class="list-info-group-item"><span>Ngày cập nhật</span> : <a>Mỹ</a></li>
+                                    <li class="list-info-group-item"><span>Đạo diễn</span> : <a class="director" rel="nofollow" href="https://phimhay.co/dao-dien/cate-shortland" title="Cate Shortland">Cate Shortland</a></li>
+                                    <li class="list-info-group-item last-item" style="-overflow: hidden;-display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-flex: 1;-webkit-box-orient: vertical;"><span>Diễn viên</span> : </li>
+                                 </ul>
+                                 <div class="movie-trailer hidden"></div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        <div class="section-bar clearfix">
+                           <h2 class="section-title"><span style="color:#ffed4d">Nội dung phim</span></h2>
+                        </div>
+                        <div class="entry-content container">
+                           <div class="video-item halim-entry-box">
+                              <article id="post-38424" class="item-content">
+                                 Phim <a>GÓA PHỤ ĐEN</a> - 2021 - Mỹ:
+                                 <p>Góa Phụ Đen Natasha Romanoff hay còn gọi là Góa phụ đen phải đối mặt với những phần đen tối của mình khi một âm mưu nguy hiểm liên quan đến quá khứ của cô nảy sinh. Bị truy đuổi bởi một thế lực sẽ không có gì có thể hạ gục cô, Natasha phải đối mặt với lịch sử là một điệp viên những mối quan hệ tan vỡ đã để lại trong cô từ lâu trước khi cô trở thành thành viên của biệt đội Avenger.</p>
+                                 <h5>Từ Khoá Tìm Kiếm:</h5>
+                                 <ul>
+                                    <li>black widow vietsub</li>
+                                 </ul>
+                              </article>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+                  
+               </main>
+               <aside id="sidebar" class="col-xs-12 col-sm-12 col-md-4"></aside>
+            </div>
+           </div>
+        </div>
+        <div class="container">
+           <section class="related-movies">
+            <div id="halim_related_movies-2xx" class="wrap-slider">
+               <div class="section-bar clearfix">
+                  <h3 class="section-title"><span>CÓ THỂ BẠN MUỐN XEM</span></h3>
+               </div>
+               <div id="halim_related_movies-2" class="owl-carousel owl-theme related-film">
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+                   
+                 
+               </div>
+               
+            </div>
+         </section>
+        </div> -->
+
+
+      <!-- xem phim -->
+
+      <!-- <div class="detail-movie-note">
+         <div class="container">
+            <div class="row container" id="wrapper">
+               <div class="halim-panel-filter">
+                  <div class="panel-heading">
+                     <div class="row">
+                        <div class="col-xs-6">
+                           <div class="yoast_breadcrumb hidden-xs"><span><span><a href="danhmuc.php">Phim hay</a> »
+                                    <span><a href="danhmuc.php">Mỹ</a> » <span class="breadcrumb_last"
+                                          aria-current="page">GÓA PHỤ ĐEN</span></span></span></span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="ajax-filter" class="panel-collapse collapse" aria-expanded="true" role="menu">
+                     <div class="ajax"></div>
+                  </div>
+               </div>
+
+               <div>
+                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ut0FbeE_zSc?si=TG67PyRL2gZMRPfi"
+                     title="YouTube video player" frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     allowfullscreen></iframe>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <section class="related-movies">
+            <div id="halim_related_movies-2xx" class="wrap-slider">
+               <div class="section-bar clearfix">
+                  <h3 class="section-title"><span>CÓ THỂ BẠN MUỐN XEM</span></h3>
+               </div>
+               <div id="halim_related_movies-2" class="owl-carousel owl-theme related-film">
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+                  <article class="thumb grid-item post-38498">
+                     <div class="halim-item">
+                        <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
+                           <div class="icon_overlay"></div>
+                           <div class="halim-post-title-box">
+                              <div class="halim-post-title ">
+                                 <p class="entry-title">Đại Thánh Vô Song</p>
+                                 <p class="original_title">Monkey King: The One And Only</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </article>
+
+
+               </div>
+
+            </div>
+         </section>
+      </div> -->
+      
+      <div class="animated-form">
+         <form action="" method="post" class="form" autocomplete="off">
+            <div class="title">Laravel</div>
+            <div class="subtitle">Tạo tài khoản xem phim</div>
+            <div class="input-container ic1">
+              <input id="firstname" class="input" type="text" placeholder=" " />
+              
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">Tên đăng nhập</label>
+            </div>
+            <div class="error_input">loi vai ca lon luon ne</div>
+            <div class="input-container ic2">
+              <input id="lastname" class="input" type="text" placeholder="">
+              <div class="cut"></div>
+              <label for="lastname" class="placeholder">Email</label>
+            </div>
+             <div class="error_input">loi vai ca lon luon ne</div>
+            <div class="input-container ic2">
+              <input id="lastname" class="input" type="password" placeholder="">
+              <div class="cut"></div>
+              <label for="lastname" class="placeholder">Mật khẩu</label>
+            </div>
+            <div class="error_input">loi vai ca lon luon ne</div>
+            
+            <button type="text" class="submit">Đăng kí</button>
+         </form>
+      </div>
+
+      <!-- footer -->
+
+      <footer>
+         <div style="margin-bottom: 1.2rem;">
+             <div class="container py-5">
+                 <div class="row g-5">
+                     <div class="col-lg-4 col-md-6">
+                         <h3 class="text-white mb-4">Liên lạc</h3>
+                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="margin-right: 1rem;"></i>Nam Từ Liêm - Hà Nội</p>
+                         <p class="mb-2"><i class="fa fa-phone-alt me-3" style="margin-right: 1rem;"></i>0382 679 151</p>
+                         <p class="mb-2"><i class="fa fa-envelope me-3" style="margin-right: 1rem;"></i>phuan3366@gmail.com</p>
+                         <div class="d-flex pt-2">
+                             <a class="btn btn-outline-white btn-social" href=""><i class="fab fa-twitter"></i></a>
+                             <a class="btn btn-outline-white btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                             <a class="btn btn-outline-white btn-social" href=""><i class="fab fa-youtube"></i></a>
+                             <a class="btn btn-outline-white btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                         </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                         <h3 class="text-white mb-4">Đường link</h3>
+                         <a class="btn btn-link text-white-50 text-decoration-none">Trang chủ</a> <br>
+                         <a class="btn btn-link text-white-50 text-decoration-none" >Giới thiệu</a> <br>
+                         <a class="btn btn-link text-white-50 text-decoration-none">Tin tức</a> <br>
+                         <a class="btn btn-link text-white-50 text-decoration-none">Larvel</a> <br>
+                      
+                     </div>
+                     
+                     <div class="col-lg-4 col-md-6">
+                         <h3 class="text-white mb-4">Thông tin</h3>
+                         <p>Website demo Laravel coder by Phạm Như Huấn</p>
+                         <div class="position-relative mx-auto" style="max-width: 400px;display: flex;">
+                           <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5 text-white" type="text">
+                           <button style="margin-left: .4rem;" type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Gửi</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             
+         </div>
+     </footer>
+      
+      <script src="https://code.jquery.com/jquery-3.7.1.js"
+         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+      <script src="./js/owl.carousel.min.js"></script>
+      <script>
+         jQuery(document).ready(function ($) {
+            var owl = $('#halim_related_movies-2');
+            owl.owlCarousel({ loop: true, margin: 4, autoplay: true, autoplayTimeout: 2000, autoplayHoverPause: true, nav: true, navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'], responsiveClass: true, responsive: { 0: { items: 2 }, 480: { items: 3 }, 600: { items: 4 }, 1000: { items: 4 } } })
+         });
+      </script>
+
+   </body>
+</body>
+
+</html>
