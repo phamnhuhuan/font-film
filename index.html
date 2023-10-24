@@ -30,9 +30,7 @@
          max-width: 80px;
       }
 
-      .vnpay {
-         padding-left: 1rem;
-      }
+      
 
       .search-input {
          padding: .5rem 1rem;
@@ -54,8 +52,8 @@
                         style="border: none;outline: none;background-color: transparent;flex: 1;">
                      <div class="" id="resuft_search"
                         style="position: absolute;z-index: 100;width: 100%;background-color: #1b1515;top: 100%;padding: 0 1rem; margin-top: .5rem;border-radius: 5px;">
-                        
-                       <a href="">
+
+                        <!-- <a href="">
                         <div style="margin: 2rem 0;">
                            <div style="display: flex;align-items: center;">
                               <div style="width: 25px;height: 25px;"><img style="border-radius: 50%;"
@@ -63,11 +61,17 @@
                               <div style="margin-left: 1rem;"><span>Phim chieu tap</span></div>
                            </div>
                         </div>
-                       </a>
-                        
+                       </a> -->
+
                      </div>
                   </div>
-                  <div class="logo-img vnpay"><a href=""><img src="./img/vnpay.png" alt=""></a></div>
+                  <div class="logo-img vnpay">
+                     <form action="" method="post">
+                         
+                         <button style="background-color: transparent;border: none;outline: none;" type="submit"><img src="img/vnpay.png" alt=""></button>
+                     </form>
+
+                 </div>
                </div>
             </div>
          </header>
@@ -90,6 +94,9 @@
                   <div class="menu-menu_1-container">
                      <ul id="menu-menu_1" class="nav navbar-nav navbar-left">
                         <li class="current-menu-item active"><a title="Trang Chủ" href="index.php">Trang Chủ</a></li>
+                        
+
+                        <li><a title="Phim Chiếu Rạp" href="danhmuc.php">Phim Chiếu Rạp</a></li>
                         <li class="mega dropdown">
                            <a title="Quốc Gia" href="#" data-toggle="dropdown" class="dropdown-toggle"
                               aria-haspopup="true">Thể loại phim<span class="caret"></span></a>
@@ -98,10 +105,15 @@
 
                            </ul>
                         </li>
-
-                        <li><a title="Phim Chiếu Rạp" href="danhmuc.php">Phim Chiếu Rạp</a></li>
                         <li><a title="Đăng nhập" href="danhmuc.php">Đăng nhập</a></li>
                         <li><a title="Đăng kí" href="danhmuc.php">Đăng kí</a></li>
+                        <li><a title="Đăng kí">Xin chào Phạm Như Huấn</a></li>
+                        <li  style="margin-top: 1rem;">
+                              <form action="" method="post">
+                                 <button class="btn btn-primary" type="submit">Đăng xuất</button>
+                              </form>
+                        </li>
+                        
                      </ul>
                   </div>
 
@@ -209,7 +221,7 @@
 
       <!-- chi tiet phim -->
 
-      <!-- <div class="detail-movie-note">
+       <div class="detail-movie-note">
            <div class="container">
             <div class="row container" id="wrapper">
                <div class="halim-panel-filter">
@@ -385,7 +397,7 @@
                
             </div>
          </section>
-        </div> -->
+        </div>
 
 
       <!-- xem phim -->
@@ -534,7 +546,7 @@
          </section>
       </div> -->
 
-      <div class="animated-form">
+      <!-- <div class="animated-form">
          <form action="" method="post" class="form" autocomplete="off">
             <div class="title">Laravel</div>
             <div class="subtitle">Tạo tài khoản xem phim</div>
@@ -560,7 +572,7 @@
 
             <button type="text" class="submit">Đăng kí</button>
          </form>
-      </div>
+      </div> -->
 
       <!-- footer -->
 
