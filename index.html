@@ -18,20 +18,31 @@
    }
 
    .logo-img {
-      max-width: 120px;
+      max-width: 110px;
    }
 
    .search-input {
       padding: .8rem 1.8rem;
    }
-
-   @media (max-width: 768px) {
-      .logo-img {
-         max-width: 80px;
-      }
-
+   @media (min-width: 564px) {
       
-
+      .vnpay_mb{
+         display: none;
+      }
+      .vnpay{
+         display: block;
+      }
+      .search-input {
+         padding: .5rem 1rem;
+      }
+   }
+   @media (max-width: 564px) {
+      .logo-img {
+         max-width: 60px;
+      }
+      .vnpay_mb{
+         max-width: 50px;
+      }
       .search-input {
          padding: .5rem 1rem;
       }
@@ -65,13 +76,14 @@
 
                      </div>
                   </div>
-                  <div class="logo-img vnpay">
+                  <div class="logo-img vnpay" style="display: none;">
                      <form action="" method="post">
-                         
-                         <button style="background-color: transparent;border: none;outline: none;" type="submit"><img src="img/vnpay.png" alt=""></button>
+
+                        <button style="background-color: transparent;border: none;outline: none;" type="submit"><img
+                              src="img/vnpay.png" alt=""></button>
                      </form>
 
-                 </div>
+                  </div>
                </div>
             </div>
          </header>
@@ -81,20 +93,32 @@
             <nav class="navbar halim-navbar main-navigation" role="navigation" data-dropdown-hover="1">
                <div class="navbar-header">
 
-                  <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse"
-                     data-target="#halim" aria-expanded="false">
-                     <span class="sr-only">Menu</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                  </button>
+                 <div style="display: flex;justify-content: space-between;align-items: center;">
+                    <div>
+                        <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse"
+                           data-target="#halim" aria-expanded="false">
+                           <span class="sr-only">Menu</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                     <div class="vnpay_mb">
+                        <form action="" method="post">
+   
+                           <button style="background-color: transparent;border: none;outline: none;" type="submit"><img
+                                 src="img/vnpay.png" alt=""></button>
+                        </form>
+   
+                     </div>
+                 </div>
 
                </div>
                <div class="collapse navbar-collapse" id="halim">
                   <div class="menu-menu_1-container">
                      <ul id="menu-menu_1" class="nav navbar-nav navbar-left">
                         <li class="current-menu-item active"><a title="Trang Chủ" href="index.php">Trang Chủ</a></li>
-                        
+
 
                         <li><a title="Phim Chiếu Rạp" href="danhmuc.php">Phim Chiếu Rạp</a></li>
                         <li class="mega dropdown">
@@ -108,12 +132,12 @@
                         <li><a title="Đăng nhập" href="danhmuc.php">Đăng nhập</a></li>
                         <li><a title="Đăng kí" href="danhmuc.php">Đăng kí</a></li>
                         <li><a title="Đăng kí">Xin chào Phạm Như Huấn</a></li>
-                        <li  style="margin-top: 1rem;">
-                              <form action="" method="post">
-                                 <button class="btn btn-primary" type="submit">Đăng xuất</button>
-                              </form>
+                        <li style="margin-top: 1rem;">
+                           <form action="" method="post">
+                              <button class="btn btn-primary" type="submit">Đăng xuất</button>
+                           </form>
                         </li>
-                        
+
                      </ul>
                   </div>
 
@@ -221,14 +245,16 @@
 
       <!-- chi tiet phim -->
 
-       <div class="detail-movie-note">
-           <div class="container">
+      <div class="detail-movie-note">
+         <div class="container">
             <div class="row container" id="wrapper">
                <div class="halim-panel-filter">
                   <div class="panel-heading">
                      <div class="row">
                         <div class="col-xs-6">
-                           <div class="yoast_breadcrumb hidden-xs"><span><span><a href="danhmuc.php">Phim hay</a> » <span><a href="danhmuc.php">Mỹ</a> » <span class="breadcrumb_last" aria-current="page">GÓA PHỤ ĐEN</span></span></span></span></div>
+                           <div class="yoast_breadcrumb hidden-xs"><span><span><a href="danhmuc.php">Phim hay</a> »
+                                    <span><a href="danhmuc.php">Mỹ</a> » <span class="breadcrumb_last"
+                                          aria-current="page">GÓA PHỤ ĐEN</span></span></span></span></div>
                         </div>
                      </div>
                   </div>
@@ -239,9 +265,9 @@
                <main id="main-contents" class="col-xs-12 col-sm-12 col-md-8">
                   <section id="content" class="test">
                      <div class="clearfix wrap-content">
-                       
+
                         <div class="halim-movie-wrapper container">
-                           
+
                            <div class="movie_info col-xs-12">
                               <div class="movie-poster col-md-3">
                                  <img class="movie-thumb" src="./img/movie.jpeg" alt="GÓA PHỤ ĐEN">
@@ -249,28 +275,38 @@
                                     <div class="loader"></div>
                                     <div>
                                        <a href="xemphim.php" class="bwac-btn">
-                                          <div style="transform: translateX(-7px);"><i class="fa-regular fa-circle-play"></i></div>
+                                          <div style="transform: translateX(-7px);"><i
+                                                class="fa-regular fa-circle-play"></i></div>
                                        </a>
                                     </div>
                                  </div>
                               </div>
                               <div class="film-poster col-md-9">
-                                 <h1 class="movie-title title-1" style="display:block;line-height:35px;margin-bottom: -14px;color: #ffed4d;text-transform: uppercase;font-size: 18px;">GÓA PHỤ ĐEN</h1>
+                                 <h1 class="movie-title title-1"
+                                    style="display:block;line-height:35px;margin-bottom: -14px;color: #ffed4d;text-transform: uppercase;font-size: 18px;">
+                                    GÓA PHỤ ĐEN</h1>
                                  <h2 class="movie-title title-2" style="font-size: 11px;">Black Widow (2021)</h2>
                                  <ul class="list-info-group">
-                                    <li class="list-info-group-item"><span>Trạng Thái</span> : <span class="quality">HD</span><span class="episode">Vietsub</span></li>
-                                    <li class="list-info-group-item"><span>Điểm IMDb</span> : <span class="imdb">7.2</span></li>
+                                    <li class="list-info-group-item"><span>Trạng Thái</span> : <span
+                                          class="quality">HD</span><span class="episode">Vietsub</span></li>
+                                    <li class="list-info-group-item"><span>Điểm IMDb</span> : <span
+                                          class="imdb">7.2</span></li>
                                     <li class="list-info-group-item"><span>Thời lượng</span> : 133 Phút</li>
-                                    <li class="list-info-group-item"><span>Thể loại</span> : <a href="" rel="category tag">Chiếu Rạp</a></li>
+                                    <li class="list-info-group-item"><span>Thể loại</span> : <a href=""
+                                          rel="category tag">Chiếu Rạp</a></li>
                                     <li class="list-info-group-item"><span>Ngày cập nhật</span> : <a>Mỹ</a></li>
-                                    <li class="list-info-group-item"><span>Đạo diễn</span> : <a class="director" rel="nofollow" href="https://phimhay.co/dao-dien/cate-shortland" title="Cate Shortland">Cate Shortland</a></li>
-                                    <li class="list-info-group-item last-item" style="-overflow: hidden;-display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-flex: 1;-webkit-box-orient: vertical;"><span>Diễn viên</span> : </li>
+                                    <li class="list-info-group-item"><span>Đạo diễn</span> : <a class="director"
+                                          rel="nofollow" href="https://phimhay.co/dao-dien/cate-shortland"
+                                          title="Cate Shortland">Cate Shortland</a></li>
+                                    <li class="list-info-group-item last-item"
+                                       style="-overflow: hidden;-display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-flex: 1;-webkit-box-orient: vertical;">
+                                       <span>Diễn viên</span> : </li>
                                  </ul>
                                  <div class="movie-trailer hidden"></div>
                               </div>
                            </div>
                         </div>
-                        
+
                         <div class="section-bar clearfix">
                            <h2 class="section-title"><span style="color:#ffed4d">Nội dung phim</span></h2>
                         </div>
@@ -278,7 +314,11 @@
                            <div class="video-item halim-entry-box">
                               <article id="post-38424" class="item-content">
                                  Phim <a>GÓA PHỤ ĐEN</a> - 2021 - Mỹ:
-                                 <p>Góa Phụ Đen Natasha Romanoff hay còn gọi là Góa phụ đen phải đối mặt với những phần đen tối của mình khi một âm mưu nguy hiểm liên quan đến quá khứ của cô nảy sinh. Bị truy đuổi bởi một thế lực sẽ không có gì có thể hạ gục cô, Natasha phải đối mặt với lịch sử là một điệp viên những mối quan hệ tan vỡ đã để lại trong cô từ lâu trước khi cô trở thành thành viên của biệt đội Avenger.</p>
+                                 <p>Góa Phụ Đen Natasha Romanoff hay còn gọi là Góa phụ đen phải đối mặt với những phần
+                                    đen tối của mình khi một âm mưu nguy hiểm liên quan đến quá khứ của cô nảy sinh. Bị
+                                    truy đuổi bởi một thế lực sẽ không có gì có thể hạ gục cô, Natasha phải đối mặt với
+                                    lịch sử là một điệp viên những mối quan hệ tan vỡ đã để lại trong cô từ lâu trước
+                                    khi cô trở thành thành viên của biệt đội Avenger.</p>
                                  <h5>Từ Khoá Tìm Kiếm:</h5>
                                  <ul>
                                     <li>black widow vietsub</li>
@@ -288,14 +328,14 @@
                         </div>
                      </div>
                   </section>
-                  
+
                </main>
                <aside id="sidebar" class="col-xs-12 col-sm-12 col-md-4"></aside>
             </div>
-           </div>
-        </div>
-        <div class="container">
-           <section class="related-movies">
+         </div>
+      </div>
+      <div class="container">
+         <section class="related-movies">
             <div id="halim_related_movies-2xx" class="wrap-slider">
                <div class="section-bar clearfix">
                   <h3 class="section-title"><span>CÓ THỂ BẠN MUỐN XEM</span></h3>
@@ -304,8 +344,10 @@
                   <article class="thumb grid-item post-38498">
                      <div class="halim-item">
                         <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
-                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
-                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
                            <div class="icon_overlay"></div>
                            <div class="halim-post-title-box">
                               <div class="halim-post-title ">
@@ -319,8 +361,10 @@
                   <article class="thumb grid-item post-38498">
                      <div class="halim-item">
                         <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
-                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
-                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
                            <div class="icon_overlay"></div>
                            <div class="halim-post-title-box">
                               <div class="halim-post-title ">
@@ -334,8 +378,10 @@
                   <article class="thumb grid-item post-38498">
                      <div class="halim-item">
                         <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
-                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
-                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
                            <div class="icon_overlay"></div>
                            <div class="halim-post-title-box">
                               <div class="halim-post-title ">
@@ -349,8 +395,10 @@
                   <article class="thumb grid-item post-38498">
                      <div class="halim-item">
                         <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
-                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
-                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
                            <div class="icon_overlay"></div>
                            <div class="halim-post-title-box">
                               <div class="halim-post-title ">
@@ -364,8 +412,10 @@
                   <article class="thumb grid-item post-38498">
                      <div class="halim-item">
                         <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
-                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
-                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
                            <div class="icon_overlay"></div>
                            <div class="halim-post-title-box">
                               <div class="halim-post-title ">
@@ -379,8 +429,10 @@
                   <article class="thumb grid-item post-38498">
                      <div class="halim-item">
                         <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
-                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
-                           <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                           <figure><img class="lazy img-responsive" src="./img/movie.jpeg" alt="Đại Thánh Vô Song"
+                                 title="Đại Thánh Vô Song"></figure>
+                           <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                 aria-hidden="true"></i>Vietsub</span>
                            <div class="icon_overlay"></div>
                            <div class="halim-post-title-box">
                               <div class="halim-post-title ">
@@ -391,13 +443,13 @@
                         </a>
                      </div>
                   </article>
-                   
-                 
+
+
                </div>
-               
+
             </div>
          </section>
-        </div>
+      </div>
 
 
       <!-- xem phim -->
